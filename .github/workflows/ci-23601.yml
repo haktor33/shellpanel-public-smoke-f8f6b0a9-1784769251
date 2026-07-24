@@ -1,0 +1,10 @@
+name: ci-test
+on:
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: test
+      run: echo heartbeat-test
